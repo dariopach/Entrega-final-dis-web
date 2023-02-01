@@ -1,0 +1,285 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*estilos INDEX*/
+
+body {
+    background-color: rgb(218, 218, 218);
+}
+
+
+/* estilos de header*/
+
+header {
+    background-color: #a4acd6ee;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+    grid-template-areas: 
+    "logo titulo"
+}
+
+#logo {
+    width: 100px;
+    grid-area: logo;
+}
+
+h1 {
+    color: #444b6e;
+    padding: 25px;
+    grid-area: titulo;
+}
+
+nav {
+    text-align: center;
+}
+
+/*estilos de menu*/
+
+li {
+    background-color: #9AB87A 
+}
+
+.container-fluid {
+    background-color: #9AB87A;
+    width: 100%;
+}
+
+.nav {
+    background-color: #9AB87A;
+}
+
+.nav-item:hover {
+    filter: drop-shadow(10px 10px 10px grey);
+}
+
+.lupa {
+    width: 20px;
+}
+
+/*estilos de section*/
+
+.section-galeria {
+    text-align: center;
+    border: 1px solid black;
+    margin: 40px;
+    padding: 15px;
+    display: none;
+}
+
+.novedades {
+    width: 75%;
+}
+
+.h2 {
+    margin-bottom: 10px;
+    
+}
+
+
+/*estilos de footer*/
+
+footer {
+    text-align: center;
+}
+
+.footer-div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*estilo boton whatsapp*/
+
+.whatsapp {
+    position: fixed;
+    width: 50px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.whatsapp:hover {
+    scale: 1.5;
+}
+
+/*estilos NOSOTROS*/
+main {
+    padding: 20px;
+    margin: 30px;
+}
+
+.nuestrahistoria {
+    margin-bottom: 20px;
+}
+
+.mision {
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-top: 20px;
+}
+
+/*estilos TIENDA*/
+
+.tienda {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.tienda section {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+/*estilos CONTACTO*/
+
+form {
+    display: inline-block;
+    width: 50%;
+}
+
+input {
+    width: 180%;
+}
+
+.mensaje {
+    height: 200px;
+    width: 180%;
+}
+
+.boton-enviar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+}
+
+/*estilo mapa ubicacion*/
+
+
+
+.gmap-canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 350px;
+}
+
+.gmap-iframe {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+
+
+.icono-ubicacion {
+    width: 10px;
+}
+
+.icono-correo {
+    width: 10px;
+}
+
+.icono-telefono {
+    width: 10px;
+}
+
+.correo {
+    text-align: left;
+    margin-top: 10px;
+    grid-area: correo;
+}
+
+.ubicacion {
+    text-align: left;
+    margin-top: 15px;
+    grid-area: ubicacion;
+}
+
+.telefono {
+    text-align: left;
+    margin-top: 10px;
+    grid-area: telefono;
+}
+
+/*estilos PREGUNTAS FRECUENTES*/
+
+.preguntasfrecuentes {
+    padding: 20px;
+    display: none;
+}
+
+.preguntasfrecuentes p {
+    margin-bottom: 20px;
+}
+
+
+
+/* pantallas de tablet*/
+
+@media screen and (min-width:576px) {
+    .section-galeria {
+        display: block;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    #accordion-menu {
+        display: none;
+    }
+
+    .preguntasfrecuentes {
+        display: block;
+    }
+}
+
+
+/*pantallas de escritorio*/
+
+@media screen and (min-width:1024px) {
+
+    .main-contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+        grid-template-areas: 
+        "formulario mapa"
+        "formulario ubicacion"
+        "formulario correo"
+        "formulario telefono";
+    }
+    
+    .formulario-contacto {
+        grid-area: formulario;
+    }
+    .mapouter {
+        grid-area: mapa;
+        margin-top: 40px;
+    }
+
+    #accordion-menu {
+        display: none;
+    }
+
+    .preguntasfrecuentes {
+        display: block;
+    }
+
+    }

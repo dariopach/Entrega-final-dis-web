@@ -17,7 +17,7 @@ body {
 /* estilos de header*/
 
 header {
-    background-color: #a4acd6ee;
+    background-image: linear-gradient(to left,#c8ceebfd, #444b6e);
 }
 
 .banner {
@@ -32,6 +32,15 @@ header {
 #logo {
     width: 100px;
     grid-area: logo;
+
+}
+
+#logo-index {
+    width: 100px;
+    grid-area: logo;
+    animation-name: animacion-logo-index;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
 }
 
 h1 {
@@ -283,3 +292,14 @@ form label {
     }
 
     }
+
+/*animaciones*/
+
+@keyframes animacion-logo-index {
+    from { 
+        transform: scale(0.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}

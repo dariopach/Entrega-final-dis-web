@@ -1,0 +1,196 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+/*estilos generales a todas las paginas*/
+/*estilos de body*/
+body {
+  background-color: #dadada; }
+
+/* estilos de header*/
+header {
+  background-image: linear-gradient(to left, #c8ceebfd, #444b6e); }
+  header .banner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "logo titulo"; }
+  header #logo {
+    grid-area: logo; }
+  header #logo-index {
+    grid-area: logo;
+    animation-name: animacion-logo-index;
+    animation-iteration-count: 1;
+    animation-duration: 2s; }
+  header h1 {
+    color: #444b6e;
+    padding: 1.8rem;
+    grid-area: titulo; }
+  header nav {
+    text-align: center; }
+
+/*estilos de menu*/
+li {
+  background-color: #9AB87A; }
+
+.container-fluid {
+  background-color: #9AB87A;
+  width: 100%; }
+  .container-fluid .collapse {
+    justify-content: center; }
+
+.nav {
+  background-color: #9AB87A; }
+
+.nav-item:hover {
+  filter: drop-shadow(10px 10px 10px grey); }
+
+/*estilos de footer*/
+footer {
+  text-align: center; }
+  footer .footer-div {
+    margin-top: 0.5rem;
+    margin-bottom: 1.3rem; }
+
+/*estilo boton whatsapp*/
+.whatsapp {
+  position: fixed;
+  width: 50px;
+  right: 20px;
+  bottom: 20px;
+  transition: 1s all; }
+
+.whatsapp:hover {
+  scale: 1.5; }
+
+/*estilos de section*/
+.section-galeria {
+  text-align: center;
+  border: 1px solid black;
+  margin: 40px;
+  padding: 15px;
+  display: none; }
+
+.novedades {
+  width: 75%; }
+
+.h2 {
+  margin-bottom: 0.7rem; }
+
+/*estilos de main*/
+.main-nosotros {
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .main-nosotros .nuestra-historia {
+    margin-bottom: 1.5rem; }
+  .main-nosotros .mision {
+    margin-bottom: 1.5rem; }
+  .main-nosotros p {
+    margin-bottom: 1.5rem; }
+
+/*estilos contacto*/
+.formulario-contacto {
+  display: inline-block;
+  width: 50%; }
+  .formulario-contacto fieldset .boton-enviar {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .formulario-contacto fieldset .div-mensaje .mensaje {
+    height: 200px;
+    width: 180%; }
+  .formulario-contacto fieldset div input {
+    width: 180%; }
+  .formulario-contacto fieldset div label {
+    display: block; }
+
+/*estilo mapa ubicacion*/
+.mapouter .gmap-canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 350px; }
+  .mapouter .gmap-canvas .gmap-iframe {
+    width: 100% !important;
+    height: 350px !important; }
+
+.mapouter .correo {
+  text-align: left;
+  margin-top: 10px;
+  grid-area: correo; }
+
+.mapouter .ubicacion {
+  text-align: left;
+  margin-top: 15px;
+  grid-area: ubicacion; }
+
+.mapouter .telefono {
+  text-align: left;
+  margin-top: 10px;
+  grid-area: telefono; }
+
+/*estilos preguntas frecuentes*/
+.preguntasfrecuentes {
+  padding: 20px;
+  display: none; }
+  .preguntasfrecuentes p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem; }
+  .preguntasfrecuentes h2 {
+    font-size: 1.5rem; }
+
+/*estilos TIENDA*/
+.tienda {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  flex-direction: column; }
+  .tienda section {
+    display: inline-block;
+    margin: 1.5rem;
+    text-align: center; }
+
+/* pantallas de tablet*/
+@media screen and (min-width: 576px) {
+  .section-galeria {
+    display: block; }
+  .carousel {
+    display: none; }
+  #accordion-menu {
+    display: none; }
+  .preguntasfrecuentes {
+    display: block; }
+  .tienda {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center; } }
+
+/*pantallas de escritorio*/
+@media screen and (min-width: 1024px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+    grid-template-areas: "formulario mapa" "formulario ubicacion" "formulario correo" "formulario telefono"; }
+  .formulario-contacto {
+    grid-area: formulario; }
+  .mapouter {
+    grid-area: mapa;
+    margin-top: 40px; }
+  #accordion-menu {
+    display: none; }
+  .preguntasfrecuentes {
+    display: block; } }
+
+/*animaciones*/
+@keyframes animacion-logo-index {
+  from {
+    transform: scale(0.3); }
+  to {
+    transform: scale(1); } }

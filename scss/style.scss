@@ -1,0 +1,25 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+//importo archivos secundarios
+
+//extras
+@import "base/variables";
+
+//paginas
+@import "html/general";
+@import "html/index";
+@import "html/nosotros";
+@import "html/contacto";
+@import "html/preguntas-frecuentes";
+@import "html/tienda";
+@import "html/media-query";
+@import "html/animacion";

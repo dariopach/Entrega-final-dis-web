@@ -1,0 +1,60 @@
+/* pantallas de tablet*/
+
+@media screen and (min-width:576px) {
+    .section-galeria {
+        display: block;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    #accordion-menu {
+        display: none;
+    }
+
+    .preguntasfrecuentes { 
+        display: block;
+    }
+
+    .tienda {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+}
+
+
+/*pantallas de escritorio*/
+
+@media screen and (min-width:1024px) {
+
+    .main-contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 2rem;
+
+        grid-template-areas: 
+        "formulario mapa"
+        "formulario ubicacion"
+        "formulario correo"
+        "formulario telefono";
+    }
+    
+    .formulario-contacto {
+        grid-area: formulario;
+    }
+    .mapouter {
+        grid-area: mapa;
+        margin-top: 40px;
+    }
+
+    #accordion-menu {
+        display: none;
+    }
+
+    .preguntasfrecuentes {
+        display: block;
+    }
+    }

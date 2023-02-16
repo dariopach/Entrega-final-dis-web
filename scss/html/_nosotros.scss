@@ -1,0 +1,22 @@
+
+@import "../base/variables";
+
+/*estilos de main*/
+
+.main-nosotros {
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .nuestra-historia {
+        margin-bottom:$medida-margin;
+    }
+    .mision {
+        margin-bottom: $medida-margin;
+    }
+    p {
+        margin-bottom: $medida-margin;
+    }
+}

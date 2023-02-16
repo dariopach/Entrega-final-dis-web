@@ -1,0 +1,18 @@
+
+@import "../base/variables";
+
+/*estilos TIENDA*/
+
+.tienda {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    flex-direction: column;
+    
+    section {
+        display: inline-block;
+        margin: $medida-margin;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,17 @@
+@import "../base/variables";
+
+/*estilos preguntas frecuentes*/
+
+.preguntasfrecuentes {
+    padding: 20px;
+    display: none;
+
+    p {
+        margin-bottom: $medida-margin;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

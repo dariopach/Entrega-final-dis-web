@@ -1,18 +1,33 @@
+@import "../base/extend";
+
 /*estilos de section*/
 
-.section-galeria {
-    text-align: center;
-    border: 1px solid black;
-    margin: 40px;
-    padding: 15px;
-    display: none;
+.video-como-comprar {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 1rem;
+}
+
+.section-novedades {
+    @extend %section;
+    border: 2px solid black;
+}
+
+.section-destacados {
+    @extend %section;
+    border: 2px solid green;
+}
+
+.section-mas-vendidos {
+    @extend %section;
+    border: 2px solid red;
 }
 
 .novedades {
     width: 75%;
-}
 
-.h2 {
-    margin-bottom: 0.7rem;
-    
+    .h2 {
+        margin-bottom: 0.7rem;
+    }
 }

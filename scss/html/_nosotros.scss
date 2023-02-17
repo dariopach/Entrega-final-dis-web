@@ -1,7 +1,6 @@
-
 @import "../base/variables";
 
-/*estilos de main*/
+/*estilos de main-nosotros*/
 
 .main-nosotros {
     padding: 2rem;
@@ -11,11 +10,13 @@
     text-align: center;
 
     .nuestra-historia {
-        margin-bottom:$medida-margin;
+        margin-bottom: $medida-margin;
     }
+
     .mision {
         margin-bottom: $medida-margin;
     }
+
     p {
         margin-bottom: $medida-margin;
     }

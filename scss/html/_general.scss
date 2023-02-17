@@ -1,6 +1,7 @@
 /*estilos generales a todas las paginas*/
 
 @import "../base/variables";
+@import "../base/mixing";
 
 /*estilos de body*/
 
@@ -11,35 +12,35 @@ body {
 /* estilos de header*/
 
 header {
-    background-image: linear-gradient(to left,#c8ceebfd, $color-fuente);
+    background-image: linear-gradient(to left, #c8ceebfd, $color-fuente);
 
     .banner {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        
-        grid-template-areas: 
-        "logo titulo"
+
+        grid-template-areas:
+            "logo titulo"
     }
-    
+
     #logo {
         grid-area: logo;
-    
+
     }
-    
+
     #logo-index {
         grid-area: logo;
         animation-name: animacion-logo-index;
         animation-iteration-count: 1;
         animation-duration: 2s;
     }
-    
+
     h1 {
         color: $color-fuente;
         padding: 1.8rem;
         grid-area: titulo;
     }
-    
+
     nav {
         text-align: center;
     }
@@ -50,12 +51,13 @@ header {
 /*estilos de menu*/
 
 li {
-    background-color: $color-principal 
+    background-color: $color-principal
 }
 
 .container-fluid {
     background-color: $color-principal;
     width: 100%;
+
     .collapse {
         justify-content: center;
     }
@@ -66,32 +68,27 @@ li {
 }
 
 .nav-item:hover {
-    filter: drop-shadow(10px 10px 10px grey);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem grey);
 }
 
 /*estilos de footer*/
 
 footer {
     text-align: center;
+    background-color: white;
+
     .footer-div {
         margin-top: 0.5rem;
-        margin-bottom: 1.3rem;
     }
 }
-
-
 
 /*estilo boton whatsapp*/
 
 .whatsapp {
-    position: fixed;
-    width: 50px;
-    right: 20px;
-    bottom: 20px;
+    @include posicion-boton-wp;
     transition: 1s all;
 }
 
 .whatsapp:hover {
     scale: 1.5;
 }
-

@@ -7,19 +7,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-//importo archivos secundarios
-
-//extras
-@import "base/variables";
-
-//paginas
+//importo paginas
 @import "html/general";
 @import "html/index";
 @import "html/nosotros";
 @import "html/contacto";
 @import "html/preguntas-frecuentes";
 @import "html/tienda";
+
+//importo media querys y animaciones
+
 @import "html/media-query";
 @import "html/animacion";

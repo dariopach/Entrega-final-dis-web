@@ -80,12 +80,18 @@ footer {
 
 .section-novedades {
   border: 2px solid black; }
+  .section-novedades img {
+    margin: 0.3rem; }
 
 .section-destacados {
   border: 2px solid green; }
+  .section-destacados img {
+    margin: 0.3rem; }
 
 .section-mas-vendidos {
   border: 2px solid red; }
+  .section-mas-vendidos img {
+    margin: 0.3rem; }
 
 .novedades {
   width: 75%; }

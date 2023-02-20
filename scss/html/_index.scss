@@ -12,16 +12,25 @@
 .section-novedades {
     @extend %section;
     border: 2px solid black;
+    img {
+        margin: 0.3rem;
+    }
 }
 
 .section-destacados {
     @extend %section;
     border: 2px solid green;
+    img {
+        margin: 0.3rem;
+    }
 }
 
 .section-mas-vendidos {
     @extend %section;
     border: 2px solid red;
+    img {
+        margin: 0.3rem;
+    }
 }
 
 .novedades {

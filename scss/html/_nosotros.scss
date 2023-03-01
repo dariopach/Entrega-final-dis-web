@@ -8,16 +8,27 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    gap: 3rem;
 
-    .nuestra-historia {
-        margin-bottom: $medida-margin;
+    .btn {
+        background-color: $color-principal;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        min-width: min-content;
+        width: 80%;
+        gap: 3rem;
+
+        p {
+            justify-self: auto;
+            color: $color-fuente;
+            font-size: 1.5rem;
+        }
+
     }
 
-    .mision {
-        margin-bottom: $medida-margin;
-    }
-
-    p {
-        margin-bottom: $medida-margin;
+    .vision-label {
+        background-color: $color-principal;
     }
 }

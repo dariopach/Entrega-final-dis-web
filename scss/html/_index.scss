@@ -1,12 +1,18 @@
 @import "../base/extend";
+@import "../base/variables";
 
 /*estilos de section*/
 
-.video-como-comprar {
+.intro {
     display: flex;
-    justify-content: center;
-    width: auto;
+    flex-direction: column;
     padding: 1rem;
+    text-align: center;
+    .intro-texto {
+        font-size: 2rem;
+        width: auto;
+        color: $color-fuente;
+    }
 }
 
 .section-novedades {

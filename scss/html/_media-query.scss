@@ -3,6 +3,27 @@
 /* pantallas de tablet*/
 
 @media screen and (min-width:576px) {
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+        text-align: center;
+        width: auto;
+
+        .intro-texto {
+            align-self: center;
+            width: 50%;
+            font-size: 2rem;
+            color: $color-fuente;
+        }
+
+        .video-como-comprar {
+            align-self: center;
+        }
+    }
+
     .section-novedades {
         display: block;
     }
